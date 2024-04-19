@@ -9,9 +9,39 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        banner: "url('/assets/images/banner.jpg')",
+      },
+
+      borderRadius: {},
+
+      colors: {
+        primary: {
+          50: "#0D6EFD",
+          100: "#000031",
+          200: "#E7F0FF",
+          300: "#FFFFFF",
+          400: "#647995",
+        },
+        secondary: {
+          100: "#0A369D",
+          200: "#344054",
+          300: "#F0F2F5",
+          400: "#FBEAE9",
+          500: "#FEF4E6",
+          600: "#7A4504",
+        },
+        warning: {
+          100: "#FFCC33",
+        },
+        error: {
+          100: "#FBEAE9",
+        },
+        green: {
+          100: "#00CC99",
+        },
+      },
+      fontFamily: {
+        primary: ["var(--font-poppins)", "san-serif"],
       },
     },
   },
