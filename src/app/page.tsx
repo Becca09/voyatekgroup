@@ -38,13 +38,13 @@ const Page = () => {
   ]
   return (
     <div className='mt-5 container mx-auto'>
-      <div className="flex gap-10">
+      <div className="flex gap-5">
         <Sidebar />
 
         <div className=" flex-grow  bg-white p-4">
-          <div className="mt-2 bg-banner p-4 bg-cover bg-center bg-no-repeat">
-            <div className=''>
-              <Icon id='arrow-left' />
+          <div className="mt-2 bg-banner p-4 bg-cover bg-center bg-no-repeat h-48">
+            <div className='bg-secondary-300 rounded max-w-max max-h-max opacity-60 p-2'>
+              <Icon id='arrow-left' className='w-6 h-6' />
             </div>
           </div>
 
