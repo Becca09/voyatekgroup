@@ -16,12 +16,12 @@ const TripInfo = ({ startDate, endDate, nameOfTrip, country, typeOfTrip }: TripI
         <div>
             <div className='flex flex-row justify-between'>
                 <div className='mt-10  w-[50%] '>
-                    <div className='bg-secondary-500 text-secondary-600 flex flex-row gap-3 items-center px-4 py-1 h-10 mb-7'>
-                        {/* <div><Icon id="calender" className="" /></div> */}
-                        <div><p className="font-bold">{startDate}</p></div>
-                        <div><p className="font-bold">To</p></div>
-                        {/* <div><Icon id="arrow-right" className="" /></div> */}
-                        <div><p className="font-bold">{endDate}</p></div>
+                    <div className='bg-secondary-500 text-secondary-600 flex flex-row gap-2 items-center px-4 py-1 mb-7 max-w-max '>
+                        <Icon id="calender" className="h-6 w-6 mt-2" />
+                        <p className="font-bold text-xs">{startDate}</p>
+                        <p className="font-bold text-xs">To</p>
+                        <Icon id="arrow-right" className="h-6 w-6 mt-3" />
+                        <p className="font-bold text-xs">{endDate}</p>
 
                     </div>
 
@@ -35,29 +35,37 @@ const TripInfo = ({ startDate, endDate, nameOfTrip, country, typeOfTrip }: TripI
                         <div className='bg-primary-200 rounded- px-10 py-2'>
                             <Icon id="user-plus" className="w-4 h-4" />
                         </div>
-                        <h1>...</h1>
+                        <Icon id="three-dots" className="w-7 h-7" />
+
                     </div>
 
                 </div>
             </div>
 
-            <div className='flex flex-row justify-between'>
+            <div className='flex flex-row justify-between -mt-3'>
                 <div>
-                    <h1>{nameOfTrip}</h1>
+                    <h1 className='font-bold text-2xl'>{nameOfTrip}</h1>
                     <div className='flex flow-row gap-2 text-primary-400'>
                         <p className='border-r border-slate-400 pr-5'>{country}</p>
-                        <p className='pl-5'>{typeOfTrip}</p>
+                        <p className='pl-3'>{typeOfTrip}</p>
                     </div>
                 </div>
-                <div className="mt-2 flex flex-row gap-4 ">
+                <div className=" flex flex-row">
                     <Image
                         src="/assets/images/user2.jpg"
-                        width={40}
-                        height={40}
+                        width={70}
+                        height={70}
                         alt=""
                         className="rounded-full"
                     />
-                    <Icon id="settings" className="h-6 w-6 mt-3" />
+                    <Image
+                        src="/assets/images/xx.jpg"
+                        width={70}
+                        height={70}
+                        alt=""
+                        className="rounded-full"
+                    />
+
                 </div>
             </div>
 

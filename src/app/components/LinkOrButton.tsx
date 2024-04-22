@@ -6,9 +6,9 @@ import clsx from 'clsx'
 import { Spinner } from './Spinner'
 
 const variants = {
-    primary: 'bg-primary-50 text-white',
-    secondary: 'bg-white text-primary-50',
-    outline: 'bg-tranparent text-black border-primary-50',
+    primary: 'bg-primary-50 ',
+    secondary: 'bg-white ',
+    outline: 'bg-tranparent  border-primary-50',
     unstyled: '',
 }
 

@@ -24,7 +24,7 @@ const Sidebar = () => {
             ))}
 
             <div className='flex flex-row gap-7 items-center bg-secondary-300 px-3 py-2 rounded'>
-                <LinkOrButton isFull={false} className='px-5'>Go</LinkOrButton>
+                <LinkOrButton isFull={false} className='px-5 text-white'>Go</LinkOrButton>
                 <p className='text-primary-40 font text-xs  '>Personal Account</p>
                 <Icon id="up-down" className="w-6 h-6  mb-1" />
 

@@ -59,7 +59,7 @@ const Navbar = () => {
 
           <div className="flex flex-row pl-3">
             <div className="mt-5">
-              <LinkOrButton isFull={false} className="px-2">Subsribe</LinkOrButton>
+              <LinkOrButton isFull={false} className="px-2 text-white">Subsribe</LinkOrButton>
 
             </div>
             <ul className="lg:flex lg:flex-row hidden gap-5 mt-2 px-3 ">

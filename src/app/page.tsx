@@ -5,6 +5,8 @@ import { Icon } from './components/Icon'
 import TripInfo from './components/TripInfo'
 import Cards from './components/Cards'
 import Flights from './components/Flights'
+import Hotels from './components/Hotels'
+import Activities from './components/Activities'
 
 const Page = () => {
   const CARD = [
@@ -20,18 +22,18 @@ const Page = () => {
     {
       head: "Hotels",
       details: "Build, personalize, and optimize your itineraries with our trip planner.",
-      classname: "text-black bg-primary-200",
+      classname: "text-black bg-primary-200 ",
       buttonText: "Add Hotels",
-      buttonClass: ""
+      buttonClass: " text-white"
 
     },
 
     {
-      head: "Hotels",
+      head: "Flights",
       details: "Build, personalize, and optimize your itineraries with our trip planner.",
       classname: "text-white bg-primary-50",
       buttonText: "Add Flieghts",
-      buttonClass: "bg-white text-primary-50"
+      buttonClass: "bg-white text-primary-50 "
     },
   ]
   return (
@@ -65,10 +67,20 @@ const Page = () => {
             <div style={{ width: '200px' }} />
           </div>
 
-          <div className='mt-10'>
+          <div className='mt-8'>
             <h1>Trip Iteneries</h1>
             <p className='text-primary-400'>Your trip itineraries are placed here</p>
             <Flights />
+          </div>
+
+          <div className='mt-8'>
+            <Hotels
+            />
+          </div>
+
+          <div className='mt-8'>
+            <Activities
+            />
           </div>
         </div>
       </div>
